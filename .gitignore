@@ -1,0 +1,29 @@
+# Dependencies
+web/node_modules/
+api/vendor/bundle/
+
+# Build output
+web/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+api/.env
+api/.env.*
+
+# Logs
+*.log
+api/log/*.log
+
+# Rails tmp
+api/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp

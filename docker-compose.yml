@@ -1,0 +1,43 @@
+services:
+  api:
+    build: ./api
+    command: bundle exec rails server -b 0.0.0.0 -p 3000
+    ports:
+      - "3000:3000"
+    environment:
+      RAILS_ENV: development
+      REDIS_URL: redis://redis:6379/0
+      ALLOWED_ORIGINS: http://localhost:5173
+    depends_on:
+      - redis
+    volumes:
+      - ./api:/app
+    working_dir: /app
+
+  worker:
+    build: ./api
+    command: bundle exec sidekiq
+    environment:
+      RAILS_ENV: development
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      - redis
+    volumes:
+      - ./api:/app
+    working_dir: /app
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  web:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "corepack enable && pnpm install && pnpm dev --host"
+    ports:
+      - "5173:5173"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./web:/app
