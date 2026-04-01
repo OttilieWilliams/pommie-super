@@ -75,7 +75,7 @@ export function ResultsPRStaying() {
         <p className="text-sm text-slate-500 mb-12">
           There's a cap on how much you can contribute each year at the concessional rate.{' '}
           <a
-            href="https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/how-much-can-you-contribute-to-super/concessional-contributions-cap"
+            href="https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/contributions-caps"
             className="underline hover:text-slate-700"
             target="_blank"
             rel="noreferrer"

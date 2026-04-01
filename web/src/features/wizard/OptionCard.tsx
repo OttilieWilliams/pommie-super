@@ -9,7 +9,7 @@ export function OptionCard({ primary, secondary, selected, onClick }: OptionCard
   return (
     <button
       onClick={onClick}
-      className={`w-full text-left p-6 rounded-lg border-2 transition-all ${
+      className={`w-full text-left p-6 rounded-lg border-2 transition-all cursor-pointer ${
         selected
           ? 'border-slate-900 bg-slate-50'
           : 'border-slate-200 bg-white hover:border-slate-300'

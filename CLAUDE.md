@@ -63,7 +63,7 @@ never write copy that removes, softens, or buries either one.
 **Work in progress disclaimer** (displayed prominently, not just the footer):
 > "⚠️ PommieSuper is a work in progress. Calculations may contain errors. If
 > you spot anything that looks wrong, please
-> [open an issue on GitHub].(https://github.com/YOUR_USERNAME/pommiesuper/issues)"
+> [open an issue on GitHub].(https://github.com/OttilieWilliams/pommie-super/issues)"
 
 ### Separation of Concerns
 

@@ -26,49 +26,14 @@ export default function HomePage() {
 
         <button
           onClick={() => navigate("/wizard")}
-          className="bg-slate-900 text-white px-8 py-4 text-lg rounded-md hover:bg-slate-800 transition-colors"
+          className="bg-slate-900 text-white px-8 py-4 text-lg rounded-md hover:bg-slate-800 transition-colors cursor-pointer"
         >
-          See the tax case
+          Start the calculator
         </button>
 
         <p className="text-sm text-slate-500 mt-4">
           No account needed. Takes under 2 minutes.
         </p>
-      </div>
-
-      {/* Three Column Section */}
-      <div className="max-w-6xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <h3 className="text-lg text-slate-900 mb-3">
-              Temporary visa holders
-            </h3>
-            <p className="text-slate-600 leading-relaxed">
-              Understand what the DASP exit tax means for your
-              super balance.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg text-slate-900 mb-3">
-              Permanent residents staying
-            </h3>
-            <p className="text-slate-600 leading-relaxed">
-              Understand the tax saving from concessional
-              contributions with no exit tax complications.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg text-slate-900 mb-3">
-              Thinking of returning to the UK?
-            </h3>
-            <p className="text-slate-600 leading-relaxed">
-              Find out whether you'll be here at 60 — and why
-              that one detail changes everything.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* Disclaimers */}
@@ -92,7 +57,7 @@ export default function HomePage() {
             Calculations may contain errors. If you spot anything that looks wrong,
             please{" "}
             <a
-              href="https://github.com/YOUR_USERNAME/pommiesuper/issues"
+              href="https://github.com/OttilieWilliams/pommie-super/issues"
               className="underline hover:text-amber-700"
             >
               open an issue on GitHub
@@ -107,7 +72,7 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
           <div>
             <a
-              href="https://github.com/YOUR_USERNAME/pommiesuper"
+              href="https://github.com/OttilieWilliams/pommie-super"
               className="hover:text-slate-900 transition-colors"
             >
               PommieSuper is open source
