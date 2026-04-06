@@ -38,8 +38,16 @@ export function ResultsPRLeavingBefore60() {
         <div className="border-l-4 border-blue-500 bg-blue-50 p-6 mb-12">
           <h2 className="text-xl text-slate-900 mb-3">Why does age 60 matter?</h2>
           <p className="text-slate-700 leading-relaxed">
-            Super is locked until preservation age. You can't withdraw it early just because you
-            leave Australia. If you're still here at 60, you can take it all out tax-free. If
+            Super is locked until{' '}
+            <a
+              href="https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/leaving-the-workforce/accessing-your-super-to-retire#ato-Preservationage"
+              className="underline hover:text-slate-900"
+              target="_blank"
+              rel="noreferrer"
+            >
+              preservation age
+            </a>
+            . You can't withdraw it early just because you leave Australia. If you're still here at 60, you can take it all out tax-free. If
             you've already left, you'll access it as a UK resident and pay income tax on it. The
             difference can be significant.
           </p>
