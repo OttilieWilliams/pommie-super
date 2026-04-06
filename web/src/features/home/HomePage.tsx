@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import { FinancialDisclaimer } from "../../components/FinancialDisclaimer";
+import { WorkInProgressBanner } from "../../components/WorkInProgressBanner";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -38,33 +40,10 @@ export default function HomePage() {
 
       {/* Disclaimers */}
       <div className="max-w-6xl mx-auto px-6 py-8">
-        <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-4">
-          <p className="text-sm text-slate-600 leading-relaxed">
-            <strong className="text-slate-900">
-              Financial disclaimer:
-            </strong>{" "}
-            PommieSuper is for general information only, not
-            financial advice. The calculations are simplified
-            and may not reflect your full situation. Consult a
-            qualified adviser before making decisions about your
-            super.
-          </p>
+        <div className="mb-4">
+          <FinancialDisclaimer />
         </div>
-
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
-          <p className="text-sm text-amber-900 leading-relaxed">
-            <strong>⚠️ Work in progress:</strong> PommieSuper is a work in progress.
-            Calculations may contain errors. If you spot anything that looks wrong,
-            please{" "}
-            <a
-              href="https://github.com/OttilieWilliams/pommie-super/issues"
-              className="underline hover:text-amber-700"
-            >
-              open an issue on GitHub
-            </a>
-            .
-          </p>
-        </div>
+        <WorkInProgressBanner />
       </div>
 
       {/* Footer */}
