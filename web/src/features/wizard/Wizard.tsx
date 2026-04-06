@@ -42,7 +42,10 @@ export function Wizard() {
           navigate('/results/whv-leaving');
           return;
         }
-        // TODO: visaType === 'temporary' → /results/temp-leaving
+        if (visaType === 'temporary') {
+          navigate('/results/temp-leaving');
+          return;
+        }
         return;
       }
       if (temporaryPlans === 'applying-for-pr') {
