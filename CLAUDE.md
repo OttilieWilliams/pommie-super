@@ -261,7 +261,7 @@ through to the service — never fall back to the WHV rate for non-WHV
 temporary visa holders.
 
 Source: `DaspCalculatorService`
-ATO ref: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/accessing-your-super/departing-australia-superannuation-payment-dasp
+ATO ref: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp
 
 ### Concessional Contribution Saving
 

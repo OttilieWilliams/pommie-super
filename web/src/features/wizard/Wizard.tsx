@@ -38,9 +38,11 @@ export function Wizard() {
 
     if (isTemporary) {
       if (temporaryPlans === 'leaving') {
-        // TODO: navigate based on visaType
-        // visaType === 'working_holiday' → /results/whv-leaving
-        // visaType === 'temporary'       → /results/temp-leaving
+        if (visaType === 'working_holiday') {
+          navigate('/results/whv-leaving');
+          return;
+        }
+        // TODO: visaType === 'temporary' → /results/temp-leaving
         return;
       }
       if (temporaryPlans === 'applying-for-pr') {

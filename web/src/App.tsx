@@ -3,6 +3,7 @@ import HomePage from "./features/home/HomePage";
 import { Wizard } from "./features/wizard/Wizard";
 import { ResultsPRStaying } from "./features/results/ResultsPRStaying";
 import { ResultsPRLeavingBefore60 } from "./features/results/ResultsPRLeavingBefore60";
+import { ResultsWHVLeaving } from "./features/results/ResultsWHVLeaving";
 
 export default function App(): React.JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function App(): React.JSX.Element {
         <Route path="/wizard" element={<Wizard />} />
         <Route path="/results/pr-staying" element={<ResultsPRStaying />} />
         <Route path="/results/pr-leaving-before-60" element={<ResultsPRLeavingBefore60 />} />
+        <Route path="/results/whv-leaving" element={<ResultsWHVLeaving />} />
       </Routes>
     </BrowserRouter>
   );
