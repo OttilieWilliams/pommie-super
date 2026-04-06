@@ -27,9 +27,11 @@ export function Wizard() {
         return;
       }
       if (stayingInAustralia === false) {
-        // TODO: navigate based on stayingOver60
-        // stayingOver60 === true  → /results/pr-leaving-here-at-60
-        // stayingOver60 === false → /results/pr-leaving-before-60
+        if (stayingOver60 === false) {
+          navigate('/results/pr-leaving-before-60');
+          return;
+        }
+        // TODO: stayingOver60 === true → /results/pr-leaving-here-at-60
         return;
       }
     }
