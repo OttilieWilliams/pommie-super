@@ -1,4 +1,4 @@
-// DASP tax rate for Working Holiday visa holders (417 / 462) on the taxable component.
+// DASP rate for Working Holiday visa holders (417 / 462): 65% on the taxable component.
 // Source: https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp
 // Last verified: March 2026
 
