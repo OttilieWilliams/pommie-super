@@ -95,7 +95,7 @@ export function ResultsTempLeaving() {
           <p className="text-slate-700 leading-relaxed">
             When you leave Australia on a temporary visa, you can claim your super as a
             Departing Australia Superannuation Payment. For holders of a Temporary Skill visa
-            (482 / 457) or Temporary Partner visa (820), DASP is taxed at 35% — still high
+            (482 / 457) or Temporary Partner visa (820), DASP is taxed at 35% — high
             enough to make extra contributions counterproductive.{' '}
             <a
               href="https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp"
